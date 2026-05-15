@@ -635,6 +635,45 @@
       .tagline-item { grid-template-columns: 1fr; gap: 6px; }
       nav { padding: 16px 24px; }
     }
+
+    /* ── PROMISE STRIP ── */
+    .promise-strip {
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      border-top: 1px solid rgba(240,234,224,0.12);
+      border-bottom: 1px solid rgba(240,234,224,0.12);
+    }
+    .promise-strip::-webkit-scrollbar { display: none; }
+    .promise-card {
+      flex: 0 0 280px;
+      padding: 44px 36px;
+      border-right: 1px solid rgba(240,234,224,0.12);
+      text-align: center;
+    }
+    .promise-card:first-child { border-left: none; }
+    .promise-card:last-child  { border-right: none; }
+    .promise-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream);
+      display: block;
+      margin-bottom: 14px;
+    }
+    .promise-card-body {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.65;
+      margin: 0;
+      font-weight: 300;
+    }
+    @media (max-width: 700px) {
+      .promise-card { flex: 0 0 72vw; padding: 36px 28px; }
+    }
   </style>
 </head>
 
@@ -657,17 +696,17 @@
 
   <hr class="rule" />
 
-  <!-- 01 THE PERSON -->
+  <!-- 01 THE BACKGROUND -->
   <section>
     <div class="fade">
-      <span class="label">01 — The Person</span>
+      <span class="label">01 — The Background</span>
       <h2>The question was always there. <strong>The answer wasn't.</strong></h2>
 
       <h3>The Question</h3>
       <p><span class="urdu-tag">اصلی ہے؟</span> &nbsp;Pakistanis have been asking this question every day, about everything that matters — food, people, brands, relationships. The word for the real thing has always been in the language. The question was always being asked. In protein, the answer never came.</p>
 
       <h3 style="margin-top:40px;">The Person</h3>
-      <p>There's a certain kind of person who doesn't need to be told what's genuine. They recognise it immediately — in food, in people, in brands. Not because they study labels. Because they already know the difference between real and Dikhawa.</p>
+      <p>There's a certain kind of person who doesn't need to be told what's genuine. They recognise it immediately — in food, in people, in brands. Not because they study labels. Because they already know the difference between real and dikhawa.</p>
       <p>They don't eat well to show off. They're not training for a transformation. They value themselves enough to choose Asal — with a standard, an intention, and zero dikhawa.</p>
       <p>Pakistan has millions of them. Students, doctors, mothers, builders, founders. But no brand has spoken to them in their own language, from their own ground.</p>
 
@@ -677,11 +716,40 @@
   </section>
   <hr class="rule" />
 
-  <!-- 02 THE MARKET -->
+  <!-- 02 ONE NAME TWO TRUTHS -->
+  <section>
+    <div class="fade">
+      <span class="label">02 — One Name, Two Truths</span>
+      <h2>One word. <strong>Two truths.</strong></h2>
+      <p>A great brand name does not need a campaign to explain it. It carries meaning from the moment it is heard. Asal carries two — and both are exactly right.</p>
+
+      <div class="meaning-block">
+        <div class="meaning-item">
+          <div class="meaning-number">I.</div>
+          <div class="meaning-arabic">عسل</div>
+          <div class="meaning-title">Honey.</div>
+          <p class="meaning-body">Ancient. Pure. Slow-crafted. The bee makes no substitutions and takes no shortcuts. Honey found in three-thousand-year-old tombs is still edible. That is not sweetness — that is resilience through purity. It is what happens when something is made properly, with nothing removed and nothing added.</p>
+        </div>
+        <div class="meaning-item">
+          <div class="meaning-number">II.</div>
+          <div class="meaning-arabic">اصل چیز</div>
+          <div class="meaning-title">The Real Thing.</div>
+          <p class="meaning-body">"Ye asal cheez hai." In every conversation, in every market, in every home — this phrase distinguishes the genuine from the imitation. It requires no explanation. It requires no campaign. It is already in the language. The brand simply becomes the answer to the question everyone is already asking.</p>
+        </div>
+      </div>
+
+      <div class="cheez-line">"Ye asal cheez hai."</div>
+      <div class="cheez-sub">Spoken by every Pakistani, every day — about everything that matters.</div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- 03 THE MARKET -->
   <section class="alt">
     <div class="inner">
       <div class="fade">
-        <span class="label">02 — The Market</span>
+        <span class="label">03 — The Market</span>
         <h2>A large market. <strong>A thin field.</strong></h2>
         <p>Pakistan's snack market is valued at <strong>USD 790 million in 2025</strong>, growing at 9.2% CAGR. The Asia-Pacific protein bar segment is projected to reach <strong>USD 2 billion by 2032</strong>. Of Pakistan's 102 million urban consumers, <strong>42% actively seek snacks with added nutritional benefit</strong> (National Nutrition Survey, 2022) — roughly 43 million people already looking for what Asal is building.</p>
         <p>The field competing for them is thin, and none of them own the space Asal is entering.</p>
@@ -716,10 +784,10 @@
 
   <hr class="rule" />
 
-  <!-- 03 THE GAP -->
+  <!-- 04 THE GAP -->
   <section>
     <div class="fade">
-      <span class="label">03 — The Gap</span>
+      <span class="label">04 — The Gap</span>
       <h2>Four problems. <strong>No one solved them.</strong></h2>
       <p>The protein snack category in Pakistan is not underserved — it is incorrectly served. Four structural gaps that every current product leaves open:</p>
 
@@ -758,11 +826,11 @@
 
   <hr class="rule" />
 
-  <!-- 04 THE OPPORTUNITY -->
+  <!-- 05 THE OPPORTUNITY -->
   <section class="alt">
     <div class="inner">
       <div class="fade">
-        <span class="label">04 — The Opportunity</span>
+        <span class="label">05 — The Opportunity</span>
         <h2>The wind is behind <strong>this category.</strong></h2>
         <p>This is not a contrarian bet. Multiple tailwinds are already moving in Asal's direction:</p>
 
@@ -801,40 +869,73 @@
 
   <hr class="rule" />
 
-  <!-- 05 THE NAME -->
-  <section>
-    <div class="fade">
-      <span class="label">05 — The Name</span>
-      <h2>One word. <strong>Two truths.</strong></h2>
-      <p>A great brand name does not need a campaign to explain it. It carries meaning from the moment it is heard. Asal carries two — and both are exactly right.</p>
-
-      <div class="meaning-block">
-        <div class="meaning-item">
-          <div class="meaning-number">I.</div>
-          <div class="meaning-arabic">عسل</div>
-          <div class="meaning-title">Honey.</div>
-          <p class="meaning-body">Ancient. Pure. Slow-crafted. The bee makes no substitutions and takes no shortcuts. Honey found in three-thousand-year-old tombs is still edible. That is not sweetness — that is resilience through purity. It is what happens when something is made properly, with nothing removed and nothing added.</p>
-        </div>
-        <div class="meaning-item">
-          <div class="meaning-number">II.</div>
-          <div class="meaning-arabic">اصل چیز</div>
-          <div class="meaning-title">The Real Thing.</div>
-          <p class="meaning-body">"Ye asal cheez hai." In every conversation, in every market, in every home — this phrase distinguishes the genuine from the imitation. It requires no explanation. It requires no campaign. It is already in the language. The brand simply becomes the answer to the question everyone is already asking.</p>
-        </div>
+  <!-- 06 OUR PROMISE -->
+  <section style="padding-top: 0; padding-bottom: 0;">
+    <div class="fade" style="padding: 52px 0 28px;"><span class="label">06 — Our Promise.</span></div>
+    <div class="promise-strip">
+      <div class="promise-card">
+        <span class="promise-card-title">Nothing to Hide.</span>
+        <p class="promise-card-body">Every ingredient on the front of the pack. No &#8220;natural flavours.&#8221; No fine print. We are that confident in what we put in.</p>
       </div>
-
-      <div class="cheez-line">"Ye asal cheez hai."</div>
-      <div class="cheez-sub">Spoken by every Pakistani, every day — about everything that matters.</div>
+      <div class="promise-card">
+        <span class="promise-card-title">You Love It or We Fix It.</span>
+        <p class="promise-card-body">If anything is wrong &#8212; taste, condition, delivery &#8212; one message and we make it right. No forms. No runaround.</p>
+      </div>
+      <div class="promise-card">
+        <span class="promise-card-title">Made With Care.</span>
+        <p class="promise-card-body">Handmade. Slow. Nothing substituted, nothing rushed. Every bar is something we would hold up and say &#8212; ye asal cheez hai.</p>
+      </div>
+      <div class="promise-card">
+        <span class="promise-card-title">Pakistani, Without Apology.</span>
+        <p class="promise-card-body">Not an import. Not a copy of one. Our identity is not a disclaimer. It is the product.</p>
+      </div>
     </div>
   </section>
 
   <hr class="rule" />
 
-  <!-- 06 PHILOSOPHY -->
+  <!-- 07 THE VISION -->
+  <section>
+    <div class="fade">
+      <span class="label">07 — The Vision</span>
+      <h2>One name. <strong>A house.</strong></h2>
+      <p>Asal is not a single product. It is a platform for everything made with real protein, made with real care, under one name that already means exactly that.</p>
+
+      <div class="vision-steps">
+        <div class="vision-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <span class="step-title">The Bar.</span>
+            <p class="step-body">One protein bar. Handmade. Real ingredients — nothing we cannot explain in one breath. This is where we earn trust. One product, done properly, is more powerful than ten done adequately.</p>
+          </div>
+        </div>
+        <div class="vision-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <span class="step-title">The Range.</span>
+            <p class="step-body">Sweet and savoury. Bars, bites, crackers, nut butters — each extending the same promise in every direction. Real protein for every palate, every meal occasion, every person. Not just the sweet-toothed gym person. Everyone who simply needs to eat well.</p>
+          </div>
+        </div>
+        <div class="vision-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <span class="step-title">The House.</span>
+            <p class="step-body">The house of real protein in Pakistan. Not all food — protein, specifically, done with craft and honesty. A category built from scratch, owned by a name that was always waiting to own it.</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:44px; font-size:15px; color:var(--muted);">The rule is simple: if we cannot hold it up and say <span style="color:var(--cream);">"ye asal cheez hai"</span> without flinching — we do not make it.</p>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <!-- 08 THE PHILOSOPHY -->
   <section class="alt">
     <div class="inner">
       <div class="fade">
-        <span class="label">06 — The Philosophy</span>
+        <span class="label">08 — The Philosophy</span>
         <h2>The brands that last <strong>show their inside.</strong></h2>
         <p>Across markets, the food brands that build lasting loyalty share one behaviour: they show what they are made of — literally and philosophically. Not better marketing. Not better design. They showed their work, and customers recognised themselves in that honesty.</p>
         <p>Asal is built from the same logic. This is the company we intend to keep.</p>
@@ -873,10 +974,10 @@
 
   <hr class="rule" />
 
-  <!-- 07 WHAT WE ARE NOT -->
+  <!-- 09 WHAT WE ARE NOT -->
   <section>
     <div class="fade">
-      <span class="label">07 — What Asal Is Not</span>
+      <span class="label">09 — What Asal Is Not</span>
       <h2>Clarity comes from <strong>what you refuse.</strong></h2>
       <p>A brand without a hard edge has no edge at all. These are the lines Asal will not cross — in product, in campaign, in language, in partnership.</p>
 
@@ -921,80 +1022,11 @@
   </section>
 
   <hr class="rule" />
-
-  <!-- 08 LANGUAGE -->
-  <section class="alt">
-    <div class="inner">
-      <div class="fade">
-        <span class="label">08 — The Language</span>
-        <h2>A name that <strong>carries motion.</strong></h2>
-        <p>The name holds the essence. The language brings the energy. These lines are already in the culture — in the street, in the home, in every conversation about what is real and what is not. We are not inventing them. We are claiming them.</p>
-
-        <div class="tagline-list">
-          <div class="tagline-item">
-            <span class="tagline-text urdu-tag">اصل زندگی میری ہے</span>
-            <span class="tagline-meaning">The real life is mine</span>
-          </div>
-          <div class="tagline-item">
-            <span class="tagline-text urdu-tag">یہ اصل ہے</span>
-            <span class="tagline-meaning">This is the real thing</span>
-          </div>
-          <div class="tagline-item">
-            <span class="tagline-text urdu-tag">کھاؤ تو اصل کھاؤ۔</span>
-            <span class="tagline-meaning">If you're eating, eat real.</span>
-          </div>
-          <div class="tagline-item">
-            <span class="tagline-text">Not for everyone.</span>
-            <span class="tagline-meaning">English — campaign hook</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="rule" />
-
-  <!-- 09 VISION -->
-  <section>
-    <div class="fade">
-      <span class="label">09 — The Vision</span>
-      <h2>One name. <strong>A house.</strong></h2>
-      <p>Asal is not a single product. It is a platform for everything made with real protein, made with real care, under one name that already means exactly that.</p>
-
-      <div class="vision-steps">
-        <div class="vision-step">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <span class="step-title">The Bar.</span>
-            <p class="step-body">One protein bar. Handmade. Real ingredients — nothing we cannot explain in one breath. This is where we earn trust. One product, done properly, is more powerful than ten done adequately.</p>
-          </div>
-        </div>
-        <div class="vision-step">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <span class="step-title">The Range.</span>
-            <p class="step-body">Sweet and savoury. Bars, bites, crackers, nut butters — each extending the same promise in every direction. Real protein for every palate, every meal occasion, every person. Not just the sweet-toothed gym person. Everyone who simply needs to eat well.</p>
-          </div>
-        </div>
-        <div class="vision-step">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <span class="step-title">The House.</span>
-            <p class="step-body">The house of real protein in Pakistan. Not all food — protein, specifically, done with craft and honesty. A category built from scratch, owned by a name that was always waiting to own it.</p>
-          </div>
-        </div>
-      </div>
-
-      <p style="margin-top:44px; font-size:15px; color:var(--muted);">The rule is simple: if we cannot hold it up and say <span style="color:var(--cream);">"ye asal cheez hai"</span> without flinching — we do not make it.</p>
-    </div>
-  </section>
-
-  <hr class="rule" />
   <!-- CLOSE -->
   <div id="close">
     <div class="fade">
-      <div class="close-urdu">اصل زندگی میری ہے۔</div>
-      <div class="close-roman">The real life is mine.</div>
+      <div class="close-urdu">یہاں سب اصلی ہے</div>
+      <div class="close-roman">Here, everything is real.</div>
       <div class="close-name">Asal</div>
     </div>
   </div>
